@@ -36,55 +36,42 @@ class Game(Screen):
 
             if x_list == ["1", "2", "3"]:
                 self.final()
-                print("kazamndın")
 
             if x_list == ["4", "5", "6"]:
                 self.final()
-                print("kazandın")
 
             if x_list == ["7", "8", "9"]:
                 self.final()
-                print("kazandın")
 
             if x_list == ["1", "4", "7"]:
                 self.final()
-                print("kazandın")
 
             if x_list == ["2", "5", "8"]:
                 self.final()
-                print("kazandın")
 
             if x_list == ["3", "6", "9"]:
                 self.final()
-                print("kazandın")
 
             if x_list == ["1", "5", "9"]:
                 self.final()
-                print("kazandın")
 
             if x_list == ["3", "5", "9"]:
                 self.final()
-                print("kazandın")
 
             if x_list == ["7", "5", "3"]:
                 self.final()
-                print("kazandın")
 
             if x_list == ["9", "5", "1"]:
                 self.final()
-                print("kazandın")
 
             if x_list == ["2", "1", "3"]:
                 self.final()
-                print("kazandın")
 
             if x_list == ["3", "1", "2"]:
                 self.final()
-                print("kazandın")
 
             if x_list == ["5", "4", "6"]:
                 self.final()
-                print("kazandın")
 
         if text == "O":
             if len(list) > 0:
@@ -102,54 +89,41 @@ class Game(Screen):
 
             if x_list == ["1", "2", "3"]:
                 self.final()
-                print("kazamndın")
 
             if x_list == ["4", "5", "6"]:
                 self.final()
-                print("kazandın")
 
             if x_list == ["7", "8", "9"]:
                 self.final()
-                print("kazandın")
 
             if x_list == ["1", "4", "7"]:
                 self.final()
-                print("kazandın")
 
             if x_list == ["2", "5", "8"]:
                 self.final()
-                print("kazandın")
 
             if x_list == ["3", "6", "9"]:
                 self.final()
-                print("kazandın")
 
             if x_list == ["1", "5", "9"]:
                 self.final()
-                print("kazandın")
 
             if x_list == ["3", "5", "9"]:
                 self.final()
-                print("kazandın")
 
             if x_list == ["7", "5", "3"]:
                 self.final()
-                print("kazandın")
 
             if x_list == ["9", "5", "1"]:
                 self.final()
-                print("kazandın")
 
     def select(self):
-        print(list)
         if len(list) < 9:
             list.clear()
             for i in start_list:
                 self.ids[i].text = ""
                 x_list.clear()
-                print(list)
                 list.append(i)
-                print(list)
 
         popup = Popup(title="Seçim Ekranı",
                       content = MDBoxLayout(
